@@ -9,7 +9,7 @@ export const getUserProfile = async (req, res) =>
     const {username} = req.params
 
     try{
-        const user = User.findOne({username}).select("-passowrd")
+        const user = await User.findOne({username}).select("-passowrd")
 
         if (!user)
         {
