@@ -66,7 +66,7 @@ export const POSTS = [
 		comments: [
 			{
 				_id: "1",
-				text: "Nice Tutorial",
+				text: "Not Nice Tutorial",
 				user: {
 					username: "janedoe",
 					profileImg: "/avatars/girl3.png",
@@ -86,6 +86,27 @@ export const POSTS = [
 			"6658s899",
 		],
 	},
+    {
+		_id: "64",
+		text: "Nothing Interesting going on here",
+		user: {
+			username: "notjohndoe",
+			profileImg: "/avatars/boy7.png",
+			fullName: "Jonhston Tonsjohn",
+		},
+		comments: [
+			{
+				_id: "1",
+				text: "Not Nice Tutorial",
+				user: {
+					username: "janedoe",
+					profileImg: "/avatars/girl3.png",
+					fullName: "Jane Doe",
+				},
+			},
+		],
+		likes: ["6658s891", "6658s892", "6658s896"],
+	}
 ];
 
 export const USERS_FOR_RIGHT_PANEL = [

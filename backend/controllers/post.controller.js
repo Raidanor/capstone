@@ -13,6 +13,7 @@ export const createPost = async (req, res) =>
 
         const user = await User.findById(userId)
 
+        // checks
         if (!user) return res.status(404).json({message: "User not found"})
 
         if (!text && !img) return res.status(404).json({message: "Text must have text or image"})

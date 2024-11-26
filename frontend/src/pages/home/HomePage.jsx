@@ -3,7 +3,8 @@ import { useState } from "react"
 import Posts from "../../components/Posts.jsx"
 import CreatePost from "./CreatePost.jsx"
 
-const HomePage = () => {
+const HomePage = () =>
+{
 	const [feedType, setFeedType] = useState("forYou")
 
 	return (
