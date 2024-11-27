@@ -112,26 +112,26 @@ export const POSTS = [
 export const USERS_FOR_RIGHT_PANEL = [
 	{
 		_id: "1",
-		fullName: "John Doe",
-		username: "johndoe",
+		fullName: "1",
+		username: "1",
 		profileImg: "/avatars/boy2.png",
 	},
 	{
 		_id: "2",
-		fullName: "Jane Doe",
-		username: "janedoe",
+		fullName: "2",
+		username: "2",
 		profileImg: "/avatars/girl1.png",
 	},
 	{
 		_id: "3",
-		fullName: "Bob Doe",
-		username: "bobdoe",
+		fullName: "3",
+		username: "3",
 		profileImg: "/avatars/boy3.png",
 	},
 	{
 		_id: "4",
-		fullName: "Daisy Doe",
-		username: "daisydoe",
+		fullName: "4",
+		username: "4",
 		profileImg: "/avatars/girl2.png",
 	},
 ]

@@ -12,7 +12,7 @@ const NotificationPage = () =>
     const notifications = [{
         _id:"1",
         from:{
-            username:"shondo",
+            username:"marco",
             profileImg: "/avatars/boy2.png"
         },
         type:"follow",
@@ -21,8 +21,16 @@ const NotificationPage = () =>
         _id: "2",
         from: {
             _id: "2",
-            username: "janedoe",
+            username: "ana",
             profileImg: "/avatars/girl1.png",
+        },
+        type: "like",
+    },{
+        _id: "3",
+        from: {
+            _id: "2",
+            username: "lena",
+            profileImg: "/avatars/girl3.png",
         },
         type: "like",
     }]

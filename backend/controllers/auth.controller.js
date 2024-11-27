@@ -25,7 +25,9 @@ export const signup = async (req, res) => {
             return res.status(400).json({error: "Email is already taken"})
         }
 
-        if (password.length < 6)
+        
+        
+        if ( password.length < 6)
         {
             res.status(400).json({ error: "Password must be atleast 6 characters long"})
         }
@@ -55,14 +57,15 @@ export const signup = async (req, res) => {
                 followers: newUser.followers,
                 following: newUser.following,
                 profileImg: newUser.profileImg,
-                link: newUser.link,
+                coverImg: newUser.coverImg,
+                link: newUser.link
             })
         }
         else{
             res.status(400).json({ error: "Invalid User Data"})
         }
     } catch (error) {
-        console.log("Error in signup controller", error.message)
+        console.log("Error in signup controller:", error.message)
         res.status(500).json({ error: "Internal Server Error"})
     }
 
@@ -91,6 +94,7 @@ export const login = async (req, res) => {
             followers: user.followers,
             following: user.following,
             profileImg: user.profileImg,
+            coverImg: user.coverImg,
             bio: user.bio,
             link: user.link,
         })
