@@ -1,4 +1,5 @@
 import express from "express"
+
 import dotenv from "dotenv"
 import { v2 as cloudinary } from "cloudinary"
 
@@ -13,6 +14,8 @@ import cookieParser from "cookie-parser"
 
 dotenv.config()
 
+const app = express()
+
 cloudinary.config({
         cloud_name: process.env.CLOUDINARY_NAME,
         api_key: process.env.CLOUDINARY_API_KEY,
@@ -20,11 +23,12 @@ cloudinary.config({
     }
 )
 
-const app = express()
 const PORT = process.env.PORT || 5000
 
-app.use(express.json()) // to parse req.body
+app.use(express.json({ limit: "5mb" }))
 app.use(cookieParser()) // for jwt cookies
+
+
 
 
 app.use("/api/auth", authRoutes)

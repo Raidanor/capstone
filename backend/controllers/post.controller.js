@@ -16,7 +16,7 @@ export const createPost = async (req, res) =>
         // checks
         if (!user) return res.status(404).json({message: "User not found"})
 
-        if (!text && !img) return res.status(404).json({message: "Text must have text or image"})
+        if (!text && !img) return res.status(404).json({message: "Post must have text or image"})
 
         if (img)
         {
@@ -25,8 +25,8 @@ export const createPost = async (req, res) =>
         }
         const newPost = new Post({
             user: userId,
-            text,
-            img
+            text: text,
+            img: img
         })
 
         await newPost.save()

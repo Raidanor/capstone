@@ -18,7 +18,7 @@ const CreatePost = () =>
     const queryClient = useQueryClient()
 
     const {mutate:createPost, isPending, isError, error} = useMutation({
-        mutationFn: async({text, img}) =>{
+        mutationFn: async({text, img}) => {
             try {
                 const res = await fetch("/api/post/create", {
 					method: "POST",
