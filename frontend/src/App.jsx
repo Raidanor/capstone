@@ -16,7 +16,6 @@ import LoadingSpinner from './components/LoadingSpinner.jsx'
 
 function App() {
     const { data: authUser, isLoading } = useQuery({
-		
 		queryKey: ["authUser"],
 		queryFn: async () => {
 			try {
