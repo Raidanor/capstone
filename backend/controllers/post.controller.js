@@ -84,7 +84,8 @@ export const commentOnPost = async (req, res) =>
         post.comments.push(comment)
         await post.save()
 
-        res.status(200).json(post)
+        const numComments = post.comments
+        return res.status(200).json(numComments)
         
     } catch (error) {
         console.log("Error in commentOnPost function:", error.message)

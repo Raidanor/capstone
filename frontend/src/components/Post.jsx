@@ -20,10 +20,11 @@ const Post = ({ post }) => {
 	const postOwner = post.user 
     const formattedDate = formatPostDate(post.createdAt)
 
+    
+    const {data: authUser} = useQuery({queryKey: ["authUser"]})
 	let isLiked = post.likes.includes(authUser.user._id)
     const isMyPost = authUser.user._id === postOwner._id
 
-    const {data: authUser} = useQuery({queryKey: ["authUser"]})
 
     // -----------------------------------------------------------------------------------------------------------------------
 
