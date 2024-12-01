@@ -3,7 +3,7 @@ import Post from "./Post"
 import PostSkeleton from "./skeletons/PostSkeleton.jsx"
 import { useQuery } from "@tanstack/react-query"
 
-const Posts = ({feedType}) => {
+const Posts = ({feedType, username, userId}) => {
 
     const getPostEndPoint = () =>
     {
@@ -12,6 +12,10 @@ const Posts = ({feedType}) => {
                 return "/api/post/all"
             case "following":
                 return "/api/post/following"
+            case "posts":
+                return `/api/post/user/${username}`
+            case "likes":
+                return `/api/post/likes/${userId}`
             default: 
                 return "/api/post/all"
         }
@@ -36,7 +40,7 @@ const Posts = ({feedType}) => {
 
     useEffect(() => {
         refetch()
-    }, [feedType, refetch])
+    }, [feedType, refetch, username])
 
 	return (
 		<>
