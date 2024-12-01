@@ -31,7 +31,7 @@ const LoginPage = () =>
 
                 if (!res.ok) throw new Error(data.error || "Something went wrong")
 
-                console.log(data)
+                // console.log(data)
                 
                 
             } catch (error) {
