@@ -2,13 +2,16 @@
   "name": "capstone",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://raidanor.github.io/capstone",
   "main": "backend/server.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d frontend/dist",
     "dev": "nodemon backend/server.js",
     "start": "node backend/server.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend && npm install vite --prefix frontend"
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
-  "keywords": [],   
+  "keywords": [],
   "author": "",
   "type": "module",
   "license": "ISC",
@@ -20,6 +23,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
+    "gh-pages": "^6.2.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.8.1"
   },
