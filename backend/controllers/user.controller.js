@@ -160,16 +160,16 @@ export const updateUser = async(req, res) =>
         }
 
         if (coverImg) 
+        {
+            if (user.coverImg)
             {
-                if (user.coverImg)
-                {
-                    const img_string = user.coverImg.split("/").pop().split(".")[0]
-                    await cloudinary.uploader.destroy(img_string)
-                }
-                const uploadedResponse = await cloudinary.uploader.upload(profileImg)
-                coverImg = uploadedResponse.secure_url
-    
+                const img_string = user.coverImg.split("/").pop().split(".")[0]
+                await cloudinary.uploader.destroy(img_string)
             }
+            const uploadedResponse = await cloudinary.uploader.upload(coverImg)
+            coverImg = uploadedResponse.secure_url
+
+        }
 
         user.fullName = fullName || user.fullName
         user.username = username || user.username

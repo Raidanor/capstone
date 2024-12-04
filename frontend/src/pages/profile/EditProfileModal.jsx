@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import useUpdateUseProfile from "../../hooks/useUpdateUserProfile.jsx";
+import useUpdateUserProfile from "../../hooks/useUpdateUserProfile.jsx";
 
 const EditProfileModal = ({ authUser }) =>
 {
@@ -13,7 +13,7 @@ const EditProfileModal = ({ authUser }) =>
         currentPassword: ""
     })
 
-    const {updateProfile, isUpdatingProfile} = useUpdateUseProfile()
+    const {updateProfile, isUpdatingProfile} = useUpdateUserProfile()
 
     const handleInputChange = (e) =>
     {
@@ -51,7 +51,7 @@ const EditProfileModal = ({ authUser }) =>
                         className="flex flex-col gap-4"
                         onSubmit={(e) => {
                             e.preventDefault()
-                            updateProfile()
+                            updateProfile(formData)
                         }}
                     >
                         <div className="flex flex-wrap gap-2">

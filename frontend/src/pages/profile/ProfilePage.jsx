@@ -15,7 +15,7 @@ import { MdEdit } from "react-icons/md"
 import { useQuery } from "@tanstack/react-query"
 
 import useFollow from "../../hooks/useFollow.jsx"
-import useUpdateUseProfile from "../../hooks/useUpdateUserProfile.jsx";
+import useUpdateUserProfile from "../../hooks/useUpdateUserProfile.jsx";
 
 const ProfilePage = () =>
 {
@@ -82,7 +82,7 @@ const ProfilePage = () =>
         refetch()
     }, [username, refetch])
 
-    const {updateProfile, isUpdatingProfile} = useUpdateUseProfile()
+    const {updateProfile, isUpdatingProfile} = useUpdateUserProfile()
 
     return (
 		<>
