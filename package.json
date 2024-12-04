@@ -9,7 +9,7 @@
     "deploy": "gh-pages -d frontend/dist",
     "dev": "nodemon backend/server.js",
     "start": "node backend/server.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+    "build": "npm install && npm install --prefix frontend && npm install vite --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": [],
   "author": "",
