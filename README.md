@@ -9,6 +9,7 @@ Features:
 - Follow other users
 - Users get notified when their post is commented on or liked
 - Two feeds: one for general posts, one for only followed users
+- Users are suggested to be followed
 
 ![login](https://github.com/user-attachments/assets/ef95767f-3627-4950-971f-7326fcfec31a)
 
