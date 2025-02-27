@@ -11,10 +11,14 @@ Features:
 - Two feeds: one for general posts, one for only followed users
 - Users are suggested to be followed
 
+Login Page
 ![login](https://github.com/user-attachments/assets/ef95767f-3627-4950-971f-7326fcfec31a)
 
+Signup Page
 ![signup](https://github.com/user-attachments/assets/ea94a422-4e95-48fa-9cfc-ebd5666cc825)
 
+Home Page
 ![home](https://github.com/user-attachments/assets/5e3549c1-0424-4ddd-9be2-045dbb79c81d)
 
+User Profile
 ![userprofile](https://github.com/user-attachments/assets/6de95925-ca23-4b41-a3e9-66e494ea9816)
