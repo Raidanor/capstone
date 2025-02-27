@@ -1,4 +1,4 @@
-This is a twitter clone I built for my final university project. It was built using the MERN stack and using cloudinary for image storage. No AI or generative code tool was used during the process
+This is a Twitter/X clone I built for my final university project. It was built using the MERN stack, Tailwind CSS for styling and using cloudinary for image storage. No AI or generative code tool was used during the process
 
 Features: 
 - Create and Update profile
